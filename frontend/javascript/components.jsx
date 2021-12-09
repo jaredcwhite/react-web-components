@@ -3,17 +3,17 @@ import React, { createRef, useState } from "react"
 import { FcApproval, FcBinoculars } from "react-icons/fc"
 
 export const Components = () => {
-  const [wow, setWow] = useState("Click me")
+  const [buttonLabel, setButtonLabel] = useState("Click Me")
   const [selectedColor, setSelectedColor] = useState(null)
 
   const buttonType = "primary"
 
   const clickit = () => {
-    alert("I'm clicked!")
+    alert("I've been clicked!")
   }
 
   const selectit = (e) => {
-    setWow(e.target.value)
+    setButtonLabel(e.target.value)
   }
 
   const colors =  ['#888', '#c99', '#0ff0ff' ]
@@ -25,7 +25,7 @@ export const Components = () => {
   const dialog = createRef()
 
   return <>
-    <sl-button type={buttonType} onclick={clickit} onsl-focus={() => { console.info('focuuuus') }}>{wow}</sl-button>
+    <sl-button type={buttonType} onclick={clickit} onsl-focus={() => { console.info('focuuuus') }}>{buttonLabel}</sl-button>
 
     <br/><br/>
 
