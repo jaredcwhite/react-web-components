@@ -6,4 +6,4 @@ import '@shoelace-style/shoelace/dist/components/dialog/dialog'
 import '@shoelace-style/shoelace/dist/components/menu-item/menu-item';
 import '@shoelace-style/shoelace/dist/components/select/select.js';
 
-import "./hello.jsx"
+import "./App.jsx"
