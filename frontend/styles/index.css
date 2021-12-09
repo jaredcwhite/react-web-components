@@ -1,0 +1,28 @@
+@import "@shoelace-style/shoelace/dist/themes/light.css";
+
+:root {
+  --body-background: #fafafa;
+  --body-color: #444;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--body-color);
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+nav,
+footer {
+  text-align: center;
+}
+
+a {
+  color: var(--sl-color-primary-700);
+}
+
+main {
+  margin: 2rem auto 4rem;
+  max-width: 60rem;
+}
